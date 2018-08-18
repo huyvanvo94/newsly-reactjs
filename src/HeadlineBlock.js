@@ -10,7 +10,8 @@ class Article extends Component {
         this.state = {
             title: this.props.article.title,
             description: this.props.article.description,
-            urlToImage: this.props.article.urlToImage
+            urlToImage: this.props.article.urlToImage,
+            url: this.props.article.url
         }
     }
 
@@ -26,6 +27,9 @@ class Article extends Component {
 
                 <img className="article_img" src={this.state.urlToImage}/>
                 <p> {this.state.description }</p>
+
+
+
             </div>
         );
     }
