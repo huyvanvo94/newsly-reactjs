@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Tab from './Tab';
-import TimeTab from './TimeTab';
 import './Tabs.css';
 
 class Tabs extends Component{

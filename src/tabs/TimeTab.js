@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Tabs.css';
 
 class TimeTab extends Component{
     constructor(props){
@@ -31,7 +32,7 @@ class TimeTab extends Component{
     render(){
         return (
             <div>
-                <p>{this.state.date.toLocaleTimeString()}</p>
+                <p className="general_tab">{this.state.date.toLocaleTimeString()}</p>
             </div>
         );
     }

@@ -6,9 +6,8 @@ import React, { Component } from 'react';
 import Title from './Title';
 import Tab from './tabs/Tab';
 import Tabs from './tabs/Tabs';
-import TimeTab from './tabs/TimeTab';
-import DateTab from './tabs/DateTab';
 import HeadlineBlock from './HeadlineBlock';
+import SearchBar from './Search';
 
 /// To mock data
 function mockData() {
@@ -65,7 +64,9 @@ class Home extends Component {
     render() {
         return (
             <div>
+
                 <Title title="Newsly"/>
+
 
                 <Tabs tabs={this.renderNewsTab()}/>
 

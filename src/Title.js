@@ -5,10 +5,10 @@
 
 import React, {Component } from 'react';
 import './Title.css';
-import Tab from './tabs/Tab';
 import Tabs from './tabs/Tabs';
 import TimeTab from './tabs/TimeTab';
 import DateTab from './tabs/DateTab';
+import SearchBar from './Search';
 
 
 class Title extends Component {
@@ -29,6 +29,9 @@ class Title extends Component {
         return (
 
             <div id="title_container">
+
+                <SearchBar/>
+
                 <h1 id="title_header">
                     {this.state.title}
                 </h1>
