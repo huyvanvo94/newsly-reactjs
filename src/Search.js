@@ -9,11 +9,14 @@ class SearchBar extends Component {
 
     }
 
+    searchAction(){
+
+    }
 
     render () {
         return (
             <div className='searchbar-container'>
-                <input type="text" placeholder="Search.."/>
+                <input type="text" placeholder="Search.." onSubmit={this.searchAction}/>
             </div>
         )
     }
