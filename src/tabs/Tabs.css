@@ -1,0 +1,21 @@
+#tabs_container {
+
+    overflow: hidden;
+    width: auto;
+
+}
+
+#tabs_inner {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+
+
+}
+
+.tab_child{
+    float: left;
+    padding-right: 20px;
+
+}
