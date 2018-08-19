@@ -6,14 +6,24 @@ import React, { Component } from 'react';
 import Title from './Title';
 import Tab from './tabs/Tab';
 import Tabs from './tabs/Tabs';
-import HeadlineBlock from './HeadlineBlock';
-import SearchBar from './Search';
+import {Link} from 'react-router-dom';
 
 export default class Home extends Component {
 
+    constructor(props){
+        super(props);
+
+        this.theStyle = {
+            text_decoration: null
+        };
+    }
+
     renderNewsTab(){
         return [
-            <Tab title="World" url="example"/>,
+
+            <Link to="/search?query=world" style={this.theStyle}>
+                <Tab title="World" url="example"/>
+            </Link>,
             <Tab title="U.S." url="example"/>,
             <Tab title="Politics" url="example"/>,
             <Tab title="N.Y." url="example"/>,
