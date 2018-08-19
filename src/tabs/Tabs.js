@@ -6,10 +6,6 @@ class Tabs extends Component{
     constructor(props){
         super(props);
 
-        /*
-        this.state = {
-            tabs: this.props.tabs
-        }*/
     }
 
     displayTabs(){

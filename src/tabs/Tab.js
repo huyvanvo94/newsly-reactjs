@@ -5,6 +5,7 @@
 
 import React, {Component} from 'react';
 import './Tab.css';
+import {Link} from 'react-router-dom';
 
 class Tab extends Component {
 
@@ -19,6 +20,7 @@ class Tab extends Component {
     }
     render() {
         return (
+
             <p className="tab_header">
                 {this.state.title}
             </p>

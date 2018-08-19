@@ -13,18 +13,17 @@ export default class Home extends Component {
     constructor(props){
         super(props);
 
-        this.theStyle = {
-            text_decoration: null
-        };
+
     }
 
     renderNewsTab(){
         return [
 
-            <Link to="/search?query=world" style={this.theStyle}>
+            <Link to="/search?query=world" style={{ textDecoration: 'none', color: 'inherit'}}>
                 <Tab title="World" url="example"/>
             </Link>,
-            <Tab title="U.S." url="example"/>,
+            <Link to="/search?query=us" style={{ textDecoration: 'none', color: 'inherit'}}>
+                <Tab title="U.S." url="example"/> </Link>,
             <Tab title="Politics" url="example"/>,
             <Tab title="N.Y." url="example"/>,
             <Tab title="Business" url="example"/>,
