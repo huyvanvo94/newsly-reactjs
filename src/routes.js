@@ -9,10 +9,12 @@ import Tabs from './tabs/Tabs';
 import HeadlineBlock from './HeadlineBlock';
 import Home from './Home';
 import SearchResult from "./SearchResult";
+import history from './history';
 
 //  I have the <Router> component with a child div since that component can only have one child.
 const routes = (
-    <Router>
+
+    <Router history={history}>
 
         <div>
             <Route path="*" component={Home} />
